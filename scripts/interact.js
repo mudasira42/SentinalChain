@@ -2,7 +2,7 @@ const hre = require("hardhat");
 
 async function main() {
   const Sentinel = await hre.ethers.getContractFactory("SentinelChain");
-  const sentinel = await Sentinel.attach(" 0x5FbDB2315678afecb367f032d93F642f64180aa3");
+  const sentinel = await Sentinel.attach(" your address");
 
   const description = await sentinel.getLatestDescription();
 
