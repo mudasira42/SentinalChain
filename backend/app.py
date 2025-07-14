@@ -17,10 +17,10 @@
 # vectorizer = joblib.load("vectorizer.pkl")
 
 # # --- Twilio Config (Store securely using env vars in production) ---
-# TWILIO_SID = os.getenv("TWILIO_SID", "ACee4ebd009a7940024fc2b77311c3fe1f")
-# TWILIO_TOKEN = os.getenv("TWILIO_TOKEN", "c49c9863754c66affab433182d0a24b0")
-# TWILIO_FROM = os.getenv("TWILIO_FROM", "+16062402987")
-# ALERT_TO = os.getenv("ALERT_TO", "+919036521571")
+# TWILIO_SID = os.getenv("TWILIO_SID", "ur sid)
+# TWILIO_TOKEN = os.getenv("TWILIO_TOKEN", "ur token)
+# TWILIO_FROM = os.getenv("TWILIO_FROM", "ur account number")
+# ALERT_TO = os.getenv("ALERT_TO", "ur number")
 
 # # --- Logging Utility ---
 # LOG_FILE = "logs.json"
@@ -141,14 +141,14 @@
 # # --- Optional: SMS alert for High severity (requires Twilio setup) ---
 # def send_alert(description):
 #     # Replace with your actual Twilio SID and token
-#     account_sid = "ACee4ebd009a7940024fc2b77311c3fe1f"
-#     auth_token = "c49c9863754c66affab433182d0a24b0"
+#     account_sid = ""
+#     auth_token ="
 #     client = Client(account_sid, auth_token)
 
 #     message = client.messages.create(
 #         body=f"🚨 High severity threat detected: {description}",
-#         from_="+16062402987",  # Your Twilio number
-#         to="+919036521571"     # Your verified number (with country code)
+#         from_="",  # Your Twilio number
+#         to=""     # Your verified number (with country code)
 #     )
 #     print("📨 Alert sent:", message.sid)
 
@@ -221,10 +221,10 @@ model = joblib.load("smodel.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 
 # --- Twilio Config (Store securely using env vars in production) ---
-TWILIO_SID = os.getenv("TWILIO_SID", "ACee4ebd009a7940024fc2b77311c3fe1f")
-TWILIO_TOKEN = os.getenv("TWILIO_TOKEN", "c49c9863754c66affab433182d0a24b0")
-TWILIO_FROM = os.getenv("TWILIO_FROM", "+16062402987")
-ALERT_TO = os.getenv("ALERT_TO", "+919036521571")
+TWILIO_SID = os.getenv("TWILIO_SID", ")
+TWILIO_TOKEN = os.getenv("TWILIO_TOKEN", ")
+TWILIO_FROM = os.getenv("TWILIO_FROM", "")
+ALERT_TO = os.getenv("ALERT_TO", "")
 
 # --- Logging Utility ---
 LOG_FILE = "logs.json"
@@ -374,14 +374,14 @@ if __name__ == "__main__":
 # # EmailJS and Twilio configuration
 
 # def send_sms_alert(threat_description):
-#     account_sid = 'ACee4ebd009a7940024fc2b77311c3fe1f'
-#     auth_token = 'c49c9863754c66affab433182d0a24b0'
+#     account_sid = ''
+#     auth_token = ''
 #     client = Client(account_sid, auth_token)
 
 #     message = client.messages.create(
 #         body=f"A critical threat was detected: {threat_description}",
-#         from_='+16062402987',  # Your Twilio number
-#         to='+91 9036521571'  # Recipient's phone number
+#         from_='l',  # Your Twilio number
+#         to=''  # Recipient's phone number
 #     )
 
 # # Logging setup (tamper-proof logs)
